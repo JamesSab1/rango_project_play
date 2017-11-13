@@ -1,0 +1,24 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	About
+{% endblock %}
+{% block body_block %}
+	<h1 class="display-4">About page</h1>
+	<button class="btn btn-primary" onClick="alert('You clicked the button usimg Javascript.');">
+		Click Me - I run Javascript
+	</button>
+	<button class="btn btn-primary" id="about-btn">
+		Click Me - I'm Javascript on Speed</button>
+		<p>This is an example</p>
+		<p>This as another example</p>
+			
+	<img src="{{ MEDIA_URL }}cat.jpg"
+		alt="Picture of a cat" />
+				
+	<p>visits: {{ visits }}</p>
+{% endblock %}
+
+	
+	
